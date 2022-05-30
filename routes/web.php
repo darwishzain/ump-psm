@@ -25,3 +25,7 @@ Route::get('/schedule', function () {
     return view('schedule');
 })->name('schedule');
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
