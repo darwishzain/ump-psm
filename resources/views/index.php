@@ -9,6 +9,12 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <h1></h1>
+    <h1>
+        {{ config('app.name') }} <br>
+        {{ env('APP_NAME') }} <br>
+        {{ env( APP_NAME) }} <br>
+        {{ config(app.name) }} <br>
+
+    </h1>
 </body>
 </html>
